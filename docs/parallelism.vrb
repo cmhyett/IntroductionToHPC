@@ -1,0 +1,15 @@
+\frametitle{CPU Thread parallelism}
+\begin{columns}
+  \column{0.45\linewidth}
+    Julia: \verb+helloWorld.jl+ \\
+    ---------------------------------------------
+    \small{
+    \verbatiminput{../src/helloWorld.jl}}
+
+  \column{0.45\linewidth}
+    Python: \verb+helloWorld.py+ \\
+    ---------------------------------------------
+    \small{
+      \verbatiminput{../src/helloWorld.py}}
+
+  \end{columns}
