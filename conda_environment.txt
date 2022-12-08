@@ -1,2 +1,0 @@
-conda env export > environment.yaml
-conda env create --file environment
