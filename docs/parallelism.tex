@@ -195,7 +195,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}[t, fragile]{CPU Thread parallelism}
-  \begin{columns}
+  \begin{columns}[t]
   \column{0.45\linewidth}
     Julia: \verb+helloWorld.jl+ \\
     ---------------------------------------------
@@ -221,20 +221,35 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\begin{frame}{Node parallelism via Slurm}
+\begin{frame}[fragile]{Node parallelism via Slurm}
+  \verb+monteCarlo.jl+ \\
+  ---------------------------------------------
+  \small{
+    \verbatiminput{../src/nodeParallelism/monteCarlo.jl}}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Node parallelism via Slurm}
+  \tiny{
+    \verb+monteCarlo.slurm+\\
+    ---------------------------------------------
+    \verbatiminput{../src/nodeParallelism/monteCarlo.slurm}}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}{References \& Further Reading}
+  \begin{small}
   \begin{itemize}
   \item \href{https://core.vmware.com/resource/exploring-gpu-architecture}{https://core.vmware.com/resource/exploring-gpu-architecture}
   \item \href{https://public.confluence.arizona.edu/display/UAHPC/Puma+Quick+Start}{https://public.confluence.arizona.edu/display/UAHPC/Puma+Quick+Start}
   \item \href{https://www.tensorflow.org/guide/gpu}{https://www.tensorflow.org/guide/gpu}
   \item \href{https://developer.nvidia.com/blog/even-easier-introduction-cuda/}{https://developer.nvidia.com/blog/even-easier-introduction-cuda/}
+  \item \href{https://public.confluence.arizona.edu/display/UAHPC/Using+and+Installing+Python}{https://public.confluence.arizona.edu/display/UAHPC/Using+and+Installing+Python}
     
   \end{itemize}
+  \end{small}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
