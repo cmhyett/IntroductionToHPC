@@ -1,5 +1,0 @@
-a = 0;
-Threads.@threads for i in 1:1000
-    a += 1;
-end
-println("a = $(a)");

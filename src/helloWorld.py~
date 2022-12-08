@@ -1,8 +1,0 @@
-import threading;
-
-def helloWorld():
-    print("Hello world! This is thread # {}\n"
-          .format(threading.current_thread().name))
-
-t = threading.Thread(target=helloWorld,
-                     args=[]);
